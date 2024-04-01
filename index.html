@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="gridSize">
+            <input type="text" class="gridInput" onchange="changeSize(this.value)">
+            <button class="generate">Generate</button>
+        </div>
+        <div>
+            <div class="mode">
+                Mode: Coloring
+            </div>
+        </div>
+        <div class="contents">
+            <div class="grid"></div>
+            <div class="colors">
+                <button onclick="colorChange('black')">Black</button>
+                <button onclick="colorChange('white')">White</button>
+                <button onclick="colorChange('red')">Red</button>
+                <button onclick="colorChange('yellow')">Yellow</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>    
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
